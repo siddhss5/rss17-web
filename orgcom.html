@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>2016 Robotics: Science and Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-66594011-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row hidden-sm hidden-xs">
+        <div class ="col-lg-2 col-lg-offset-2 col-md-3 col-md-offset-1 text-right">
+          <img src="img/header_left.png">
+        </div>
+        <div class ="col-md-8 col-lg-6">
+          <img src="img/header_right.png" width="100%">
+        </div>
+      </div>
+      <div class="row hidden-md hidden-lg hidden-xl">
+        <div class ="col-xs-3">
+          <img src="img/header_left.png" width="100%">
+        </div>
+        <div class ="col-xs-9">
+          <img src="img/header_right.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="215">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 col-md-offset-4">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">RSS 2016</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="callforpapers.html">Call for Papers</a></li>
+                  <li><a href="callforworkshops.html">Call for Workshops</a></li>
+                  <li><a href="authorinfo.html">Authors' Information</a></li>
+                  <!-- <li><a href="#">Presentation Instructions</a></li> -->
+                  <li><a href="http://www.roboticsproceedings.org/" target="_blank">Past Proceedings</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="programoverview.html">Program Overview</a></li>
+                  <li><a href="invitedtalks.html">Invited Talks</a></li>
+                  <!-- <li><a href="careerspotlight.html">Early Career Spotlight</a></li> -->
+                  <!-- <li><a href="technicalprogram.html">Technical Program</a></li> -->
+                  <li><a href="workshops.html">Workshops</a></li>
+                  <li><a href="awards.html">Awards</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Committees<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="orgcom.html">Organizing Committee</a></li>
+                  <li><a href="programcommittee.html">Program Committee</a></li>
+                  <li><a href="foundationboard.html">RSS Foundation Board</a></li>
+                  <li><a href="advisoryboard.html">RSS Advisory Board</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attending<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="venue.html">Venue</a></li>
+                  <li><a href="accommodations.html">Accommodations</a></li>
+                  <li><a href="registration.html">Registration</a></li>
+                  <li><a href="localinfo.html">Local Information</a></li>
+                </ul>
+              </li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 hidden-xs hidden-sm text-right"id="sidebar"/>
+        <!-- No sidebar on small screens -->
+        <b><a href="index.html">Home</a></b><br>
+        <a href="callforpapers.html">Call for Papers</a><br>
+        <a href="callforworkshops.html">Call for Workshops</a><br>
+        <a href="authorinfo.html">Authors' Information</a><br>
+        <!-- <a href="#">Presentation Instructions</a><br> -->
+        <a href="http://www.roboticsproceedings.org/" target="_blank">Past Proceedings</a><br>
+        <br>
+        <b>Events</b><br>
+        <a href="programoverview.html">Program Overview</a><br>
+        <a href="invitedtalks.html">Invited Talks</a><br>
+        <!-- <a href="careerspotlight.html">Early Career Spotlight</a><br> -->
+        <!-- <a href="technicalprogram.html">Technical Program</a><br> -->
+        <a href="workshops.html">Workshops</a><br>
+        <a href="awards.html">Awards</a><br>
+        <br>
+        <b>Commitees</b><br>
+        <a href="orgcom.html">Organizing Committee</a><br>
+        <a href="programcommittee.html">Program Committee</a><br>
+        <a href="foundationboard.html">RSS Foundation Board</a><br>
+        <a href="advisoryboard.html">RSS Advisory Board</a><br>
+        <br>
+        <b>Attending</b><br>
+        <a href="venue.html">Venue</a><br>
+        <a href="accommodations.html">Accommodations</a><br>
+        <a href="registration.html">Registration</a><br>
+        <a href="localinfo.html">Local Information</a><br>
+        <br>
+        <b>Sponsor</b><br>
+        <a href="sponsors.html">Sponsorship</a><br>
+        <br>
+        <b>Additional Info</b><br>
+        <a href="docs/rss2016poster.pdf" target="_blank">Poster</a><br>
+        <a href="docs/rss2016flyer.pdf" target="_blank">Flyer</a><br>
+      </div>
+      
+      <div class="col-md-8 col-lg-6 col-sm-12 col-xs-12 text-justify content">
+
+<h3>Organizing Committee</h3>
+<br>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-6">
+      <b>General Chair</b><br>
+      <a href="http://www.comp.nus.edu.sg/~dyhsu/" target="_blank" class="board-name">David Hsu</a><br>
+      <a href="http://www.comp.nus.edu.sg/" target="_blank" class="board-org">National University of Singapore</a><br><br>
+
+      <b>Program Chair</b><br>
+      <a href="https://parasol.tamu.edu/~amato/" target="_blank" class="board-name">Nancy Amato</a><br>
+      <a href="http://www.tamu.edu/" target="_blank" class="board-org">Texas A&M University</a><br><br>
+
+      <b>Local Arrangements Co-Chairs</b><br>
+      <a href="http://robots.engin.umich.edu/~ryan/" target="_blank" class="board-name">Ryan Eustice</a><br>
+      <a href="http://www.umich.edu/" target="_blank" class="board-org">University of Michigan</a><br><br>
+
+      <a href="https://april.eecs.umich.edu/people/ebolson/" target="_blank" class="board-name">Edwin Olson</a><br>
+      <a href="http://www.umich.edu/" target="_blank" class="board-org">University of Michigan</a><br><br>
+
+      <b>Workshop Co-Chairs</b><br>
+      <a href="http://www.vuse.vanderbilt.edu/~adamsja/" target="_blank" class="board-name">Julie Adams</a><br>
+      <a href="http://vanderbilt.edu/" target="_blank" class="board-org">Vanderbilt University</a><br><br>
+
+      <a href="http://www.cs.unm.edu/~tapia/" target="_blank" class="board-name">Lydia Tapia</a><br>
+      <a href="http://www.unm.edu/" target="_blank" class="board-org">University of New Mexico</a><br><br>
+
+      <b>Publications Co-Chairs</b><br>
+      <a href="http://faculty.engineering.asu.edu/acs/springberman" target="_blank" class="board-name">Spring Berman</a><br>
+      <a href="http://asu.edu" target="_blank" class="board-org">Arizona State University</a><br><br>
+
+      <a href="https://parasol.tamu.edu/~sjacobs/" target="_blank" class="board-name">Sam Jacobs</a><br>
+      <a href="http://abb.com" target="_blank" class="board-org">ABB</a><br><br>
+
+      <b>Short Talk Co-Chairs</b><br>
+      <a href="http://robotics.itee.uq.edu.au/~hannakur" target="_blank" class="board-name">Hanna Kurniawati</a><br>
+      <a href="http://www.uq.edu.au/" target="_blank" class="board-org">University of Queensland</a><br><br>
+
+      <a href="http://allman.rhon.itam.mx/~marco.morales/" target="_blank" class="board-name">Marco Morales</a><br>
+      <a href="http://www.itam.mx" target="_blank" class="board-org">ITAM</a><br><br>
+
+      <b>Publicity Chair</b><br>
+      <a href="http://sabinehauert.com/" target="_blank" class="board-name">Sabine Hauert</a><br>
+      <a href="http://bristol.ac.uk/" target="_blank" class="board-org">University of Bristol</a><br><br>
+
+      <b>Review Process Co-Chairs</b><br>
+      <a href="https://parasol.tamu.edu/~sor8786/" target="_blank" class="board-name">Samuel Rodriguez</a><br>
+      <a href="http://www.tamu.edu/" target="_blank" class="board-org">Texas A&M University</a><br><br>
+
+      <a href="https://parasol.tamu.edu/~sthomas/" target="_blank" class="board-name">Shawna Thomas</a><br>
+      <a href="http://www.tamu.edu/" target="_blank" class="board-org">Texas A&M University</a><br><br>
+
+      <b>Web Chair</b><br>
+      <a href="http://svozar.com" target="_blank" class="board-name">Steve Vozar</a><br>
+      <a href="http://umich.edu" target="_blank" class="board-org">University of Michigan</a><br><br>
+
+      <b>Area Chairs</b><br>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-2">
+        <a href="http://www.pracsyslab.org/bekris" target="_blank" class="board-name">Kostas Bekris</a><br>
+        <a href="http://newbrunswick.rutgers.edu/" target="_blank" class="board-org">Rutgers University</a><br><br>
+
+        <a href="http://lasa.epfl.ch/people/member.php?SCIPER=115671" target="_blank" class="board-name">Aude Billard</a><br>
+        <a href="http://www.epfl.ch/" target="_blank" class="board-org">EPFL</a><br><br>
+
+        <a href="http://www.ce.utwente.nl/car/Raffaella_Carloni/Welcome.html" target="_blank" class="board-name">Raffaella Carloni</a><br>
+        <a href="https://www.utwente.nl/" target="_blank" class="board-org">University of Twente</a><br><br>
+
+        <a href="http://me.columbia.edu/matei-ciocarlie" target="_blank" class="board-name">Matei Ciocarlie</a><br>
+        <a href="http://www.columbia.edu/" target="_blank" class="board-org">Columbia University</a><br><br>
+
+        <a href="http://www-users.cs.umn.edu/~gini/" target="_blank" class="board-name">Maria Gini</a><br>
+        <a href="http://twin-cities.umn.edu/" target="_blank" class="board-org">University of Minnesota</a><br><br>
+
+        <a href="http://sertac.scripts.mit.edu/web/" target="_blank" class="board-name">Sertac Karaman</a><br>
+        <a href="http://mit.edu" target="_blank" class="board-org">MIT</a><br><br>
+
+        <a href="http://www.csc.kth.se/~hedvig/" target="_blank" class="board-name">Hedvig Kjellstr&ouml;m</a><br>
+        <a href="http://www.kth.se/" target="_blank" class="board-org">KTH</a><br><br>
+    </div>
+    <div class="col-md-2">
+        <a href="https://ece.uwaterloo.ca/~dkulic/people-dana.html" target="_blank" class="board-name">Dana Kuli&#263</a><br>
+        <a href="https://uwaterloo.ca/" target="_blank" class="board-org">University of Waterloo</a><br><br>
+
+        <a href="http://sssa.bioroboticsinstitute.it/user/57" target="_blank" class="board-name">Cecilia Laschi</a><br>
+        <a href="http://sssa.bioroboticsinstitute.it/" target="_blank" class="board-org">Scuola Superiore Sant'Anna</a><br><br>
+
+        <a href="http://cs.gmu.edu/~jmlien/" target="_blank" class="board-name">Jyh-Ming Lien</a><br>
+        <a href="http://gmu.edu" target="_blank" class="board-org">George Mason University</a><br><br>
+
+        <a href="http://www.cs.unc.edu/~lin/" target="_blank" class="board-name">Ming Lin</a><br>
+        <a href="http://unc.edu" target="_blank" class="board-org">University of North Carolina</a><br><br>
+
+        <a href="http://nxr.northwestern.edu/people/todd-murphey" target="_blank" class="board-name">Todd Murphey</a><br>
+        <a href="http://www.northwestern.edu/" target="_blank" class="board-org">Northwestern University</a><br><br>
+
+        <a href="http://webdiis.unizar.es/~neira/" target="_blank" class="board-name">Jose Neira</a><br>
+        <a href="http://www.unizar.es/" target="_blank" class="board-org">Universidad de Zaragoza</a><br><br>
+
+        <a href="http://www.ias.tu-darmstadt.de/Team/JanPeters" target="_blank" class="board-name">Jan Peters</a><br>
+        <a href="http://www.tu-darmstadt.de/" target="_blank" class="board-org">TU Darmstadt</a><br>
+        <a href="http://www.is.mpg.de/en" target="_blank" class="board-org">MPI Intelligent Systems</a><br><br>
+    </div>
+    <div class="col-md-2">
+        <a href="http://web.stanford.edu/~schwager/" target="_blank" class="board-name">Mac Schwager</a><br>
+        <a href="http://stanford.edu" target="_blank" class="board-org">Stanford University</a><br><br>
+
+        <a href="http://people.csail.mit.edu/julie_a_shah/" target="_blank" class="board-name">Julie Shah</a><br>
+        <a href="http://mit.edu" target="_blank" class="board-org">MIT</a><br><br>
+
+        <a href="http://faculty.cs.tamu.edu/dzsong/" target="_blank" class="board-name">Dezhen Song</a><br>
+        <a href="http://tamu.edu" target="_blank" class="board-org">Texas A&M University</a><br><br>
+
+        <a href="http://cs.brown.edu/~stefie10/" target="_blank" class="board-name">Stefanie Tellex</a><br>
+        <a href="http://brown.edu" target="_blank" class="board-org">Brown University</a><br><br>
+
+        <a href="http://www-personal.umich.edu/~tilbury/" target="_blank" class="board-name">Dawn Tilbury</a><br>
+        <a href="http://umich.edu" target="_blank" class="board-org">University of Michigan</a><br><br>
+
+        <a href="http://www.seas.upenn.edu/directory/profile.php?ID=107" target="_blank" class="board-name">Mark Yim</a><br>
+        <a href="http://www.upenn.edu" target="_blank" class="board-org">University of Pennsylvania</a><br><br>
+
+        <a href="https://staff.aist.go.jp/e.yoshida/" target="_blank" class="board-name">Eiichi Yoshida</a><br>
+        <a href="http://www.aist.go.jp/index_en.html" target="_blank" class="board-org">AIST</a><br><br>
+    </div>
+  </div>
+</div>
+<br><br>
+
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+

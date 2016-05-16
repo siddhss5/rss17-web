@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>2016 Robotics: Science and Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-66594011-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row hidden-sm hidden-xs">
+        <div class ="col-lg-2 col-lg-offset-2 col-md-3 col-md-offset-1 text-right">
+          <img src="img/header_left.png">
+        </div>
+        <div class ="col-md-8 col-lg-6">
+          <img src="img/header_right.png" width="100%">
+        </div>
+      </div>
+      <div class="row hidden-md hidden-lg hidden-xl">
+        <div class ="col-xs-3">
+          <img src="img/header_left.png" width="100%">
+        </div>
+        <div class ="col-xs-9">
+          <img src="img/header_right.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="215">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 col-md-offset-4">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">RSS 2016</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="callforpapers.html">Call for Papers</a></li>
+                  <li><a href="callforworkshops.html">Call for Workshops</a></li>
+                  <li><a href="authorinfo.html">Authors' Information</a></li>
+                  <!-- <li><a href="#">Presentation Instructions</a></li> -->
+                  <li><a href="http://www.roboticsproceedings.org/" target="_blank">Past Proceedings</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="programoverview.html">Program Overview</a></li>
+                  <li><a href="invitedtalks.html">Invited Talks</a></li>
+                  <!-- <li><a href="careerspotlight.html">Early Career Spotlight</a></li> -->
+                  <!-- <li><a href="technicalprogram.html">Technical Program</a></li> -->
+                  <li><a href="workshops.html">Workshops</a></li>
+                  <li><a href="awards.html">Awards</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Committees<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="orgcom.html">Organizing Committee</a></li>
+                  <li><a href="programcommittee.html">Program Committee</a></li>
+                  <li><a href="foundationboard.html">RSS Foundation Board</a></li>
+                  <li><a href="advisoryboard.html">RSS Advisory Board</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attending<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="venue.html">Venue</a></li>
+                  <li><a href="accommodations.html">Accommodations</a></li>
+                  <li><a href="registration.html">Registration</a></li>
+                  <li><a href="localinfo.html">Local Information</a></li>
+                </ul>
+              </li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 hidden-xs hidden-sm text-right"id="sidebar"/>
+        <!-- No sidebar on small screens -->
+        <b><a href="index.html">Home</a></b><br>
+        <a href="callforpapers.html">Call for Papers</a><br>
+        <a href="callforworkshops.html">Call for Workshops</a><br>
+        <a href="authorinfo.html">Authors' Information</a><br>
+        <!-- <a href="#">Presentation Instructions</a><br> -->
+        <a href="http://www.roboticsproceedings.org/" target="_blank">Past Proceedings</a><br>
+        <br>
+        <b>Events</b><br>
+        <a href="programoverview.html">Program Overview</a><br>
+        <a href="invitedtalks.html">Invited Talks</a><br>
+        <!-- <a href="careerspotlight.html">Early Career Spotlight</a><br> -->
+        <!-- <a href="technicalprogram.html">Technical Program</a><br> -->
+        <a href="workshops.html">Workshops</a><br>
+        <a href="awards.html">Awards</a><br>
+        <br>
+        <b>Commitees</b><br>
+        <a href="orgcom.html">Organizing Committee</a><br>
+        <a href="programcommittee.html">Program Committee</a><br>
+        <a href="foundationboard.html">RSS Foundation Board</a><br>
+        <a href="advisoryboard.html">RSS Advisory Board</a><br>
+        <br>
+        <b>Attending</b><br>
+        <a href="venue.html">Venue</a><br>
+        <a href="accommodations.html">Accommodations</a><br>
+        <a href="registration.html">Registration</a><br>
+        <a href="localinfo.html">Local Information</a><br>
+        <br>
+        <b>Sponsor</b><br>
+        <a href="sponsors.html">Sponsorship</a><br>
+        <br>
+        <b>Additional Info</b><br>
+        <a href="docs/rss2016poster.pdf" target="_blank">Poster</a><br>
+        <a href="docs/rss2016flyer.pdf" target="_blank">Flyer</a><br>
+      </div>
+      
+      <div class="col-md-8 col-lg-6 col-sm-12 col-xs-12 text-justify content">
+
+<h3>Workshops</h3>
+Workshops and tutorials will take place June 18th and 19th, 2016.
+They will commence at 8:30 and end at 17:30.
+The workshop coffee breaks will occur between 10:00 and 10:30 AM and 3:30 and 4:00 PM, with lunch scheduled for 12:00 - 2:00 PM,
+as detailed on the <a href="programoverview.html">program overview</a>.
+The workshops will take place at the University of Michigan, Rackham Building and North Quadrangle.
+<br>
+<br>
+<table class="table table-striped table-workshop">
+  <thead>
+    <tr>
+      <th width="13%" align="center">WS</th>
+      <th width="50%">Title</th>
+      <th width="32%">Organizers</th>
+      <th width="5%">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SAT-01</td>
+      <td><a href="http://allrobotshelping.wordpress.com" target="_blank">
+          Socially and Physically Assistive Robotics for Humanity</a></td>
+      <td>Chien-Ming Huang<br>Brenna Argall<br>Brian Scassellati</td>
+      <td>18-Jun</td>
+    </tr>
+    <tr>
+      <td>SAT-02</td>
+      <td><a href="http://juxi.net/workshop/deep-learning-rss-2016/" target="_blank">
+          Are the Skeptics Right? Limits and Potentials of Deep Learning in Robotics</a></td>
+      <td>Niko S&uumlnderhauf<br>J&uumlrgen Leitner<br>Michael Milford<br>Ben Upcroft<br>Pieter Abbeel<br>Wolfram Burgard<br>Peter Corke</td>
+      <td>18-Jun</td>
+    </tr>
+    <tr>
+      <td>SAT-03</td>
+      <td><a href="https://sites.google.com/site/rss16irt/" target="_blank">
+          Recent Advances in Planning and Manipulation for Industrial Robots</a></td>
+      <td>Jia Pan<br>Weiwei Wan<br>Dinesh Manocha<br>Kensuke Harada</td>
+      <td>18-Jun</td>
+    </tr>
+    <tr>
+      <td>SAT-04</td>
+      <td><a href="http://people.csail.mit.edu/cdarpino/RSS2016WorkshopHRcolla/" target="_blank">
+          Planning for Human-Robot Interaction: Shared Autonomy and Collaborative Robotics</a></td>
+      <td>Claudia Perez-D'Arpino<br>Stefanos Nikolaidis<br>Henny Admoni<br>Anca Dragan<br>Julie Shah<br>Andrew Schwartz<br>Zhi-Hong Mao<br>Siddhartha Srinivasa</td>
+      <td>18-Jun</td>
+    </tr>
+    <tr>
+      <td>SAT-05</td>
+      <td><a href="http://mrsl.grasp.upenn.edu/rss2016workshop/" target="_blank">
+          Challenges in Modeling and Control of Small-Scale Robots</a></td>
+      <td>Konstantinos Karydis<br>Yash Mulgaonkar<br>Ani Hsieh<br>Herbert Tanner<br>Vijay Kumar</td>
+      <td>18-Jun</td>
+    </tr>
+    <tr>
+      <td>SAT-06</td>
+      <td><a href="http://robotics.oregonstate.edu/rss2016workshop" target="_blank">
+          Robotics Programs: What, How, and Why?</a></td>
+      <td>Bill Smart<br>Taskin Padir<br>Fredrik Heintz</td>
+      <td>18-Jun</td>
+    </tr>
+    <tr>
+      <td>SAT-07</td>
+      <td><a href="http://nasaswarmathon.com/RSSworkshop/" target="_blank">
+          NASA Swarmathon Challenge</a></td>
+      <td>Melanie Moses<br>Joshua Hecker</td>
+      <td>18-Jun</td>
+    </tr>
+    <tr>
+      <td>SAT-08</td>
+      <td><a href="http://radlab.mechse.illinois.edu/proposed-rss-workshop/" target="_blank">
+          Embodied Experience and Movement Observation for Roboticists</a></td>
+      <td>Amy Laviers</td>
+      <td>18-Jun<br>Morning</td>
+    </tr>
+    <tr>
+      <td>SAT-09</td>
+      <td><a href="http://minimality.mit.edu/" target="_blank">
+          Minimality & Design Automation</a></td>
+      <td>Andrea Censi<br>Jason O'Kane<br>Dylan Shell</td>
+      <td>18-Jun<br>Afternoon</td>
+    </tr>
+    <tr>
+      <td>SAT-10</td>
+      <td><a href="http://chitsazlab.org/robotics/rlp2016/" target="_blank">
+          Robot Learning and Planning Workshop</a></td>
+      <td>Reza Iraji<br>Hamidreza Chitsaz</td>
+      <td>18-Jun<br>Afternoon</td>
+    </tr>
+    <tr>
+      <td>SAT-11</td>
+      <td><a href="http://cse.unl.edu/~bduncan/rss/index.html" target="_blank">
+          Human-Robot Interaction for Small and Personal Unmanned Aerial Vehicles</a></td>
+      <td>Joshua Peschel<br>Brittany Duncan</td>
+      <td>18-Jun<br>Afternoon</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>SUN-01</td>
+      <td><a href="http://ram-lab.engin.umich.edu/assistive_robotic_devices_rss2016.html" target="_blank">
+          Assistive Robotic Devices for Dynamic Locomotion</a></td>
+      <td>C. David Remy<br>Deanna Gates<br>Steven Collins</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-02</td>
+      <td><a href="http://www.bootstrapping-manipulation.com/" target="_blank">
+          Bootstrapping Manipulation Skills</a></td>
+      <td>Oliver Kroemer<br>Scott Niekum<br>George Konidaris<br>Manuel Lopes</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-03</td>
+      <td><a href="http://www.ece.rochester.edu/projects/rail/mlhrc2016/" target="_blank">
+          Model Learning for Human-Robot Communication</a></td>
+      <td>Matthew Walter<br>Thomas Howard</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-04</td>
+      <td><a href="http://rss16-representations.mit.edu/" target="_blank">
+          Geometry and Beyond: Representations, Physics, and Scene Understanding for Robotics</a></td>
+      <td>Enric Galceran<br>Luca Carlone<br>Gian Diego Tipaldi<br>Liam Paull<br>Andrea Censi<br>Cesar Cadena</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-05</td>
+      <td><a href="http://www.seas.upenn.edu/~nicbezzo/RoMa2016/" target="_blank">
+          RoMa 2016: Robot Makers - The future of digital rapid design and fabrication of robots</a></td>
+      <td>Nicola Bezzo<br>Ankur Mehta<br>Mike Tolley<br>Cagdas Onal</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-06</td>
+      <td><a href="http://www.kavrakilab.org/2016-rss-workshop/" target="_blank">
+          Workshop on Task and Motion Planning</a></td>
+      <td>Neil Dantam<br>Swarat Chaudhuri<br>Moshe Vardi<br>Lydia Kavraki</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-07</td>
+      <td><a href="http://robotics.fel.cvut.cz/demur16/" target="_blank">
+          Workshop on On-line decision-making in multi-robot coordination</a></td>
+      <td>Jan Faigl<br>Olivier Simonin<br>Fran&ccedilois Charpillet<br>Geoffrey Hollinger<br>Jen Jen Chung</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-08</td>
+      <td><a href="http://qav.comlab.ox.ac.uk/trust_in_autonomy/" target="_blank">
+          Social Trust in Autonomous Robots</a></td>
+      <td>Morteza Lahijanian<br>Maria Svorenova<br>Marta Kwiatkowska</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-09</td>
+      <td><a href="http://www.cs.unm.edu/amprg/robotGuru16" target="_blank">
+          Becoming a Robot Guru 2 Workshop</a></td>
+      <td>Lydia Tapia<br>Aleksandra Faust<br>Meeko Oishi<br>Hao-Tien Chiang<br>Elizabeth Esterly</td>
+      <td>19-Jun</td>
+    </tr>
+    <tr>
+      <td>SUN-10</td>
+      <td><a href="http://www.umiacs.umd.edu/~yzyang/deeprobotics.html" target="_blank">
+          Deep Learning for Autonomous Robots</a></td>
+      <td>Yi Li<br>Yezhou Yang<br>Michael James<br>Danil Prokhorov</td>
+      <td>19-Jun<br>Morning</td>
+    </tr>
+    <tr>
+      <td>SUN-11</td>
+      <td><a href="http://rss16iprloc.robotics.usc.edu/" target="_blank">
+          Robot-Environment Interaction for Perception and Manipulation: Interactive Perception Meets Reinforcement Learning and Optimal Control</a></td>
+      <td>Karol Hausman<br>Herke van Hoof<br>Nikolay Atanasov<br>Roberto Martin Martin<br>Oliver Brock</td>
+      <td>19-Jun<br>Morning</td>
+    </tr>
+    <tr>
+      <td>SUN-12</td>
+      <td><a href="http://tinyurl.com/vprice-RSS16" target="_blank">
+          Visual Place Recognition: What is it Good For?</a></td>
+      <td>Niko S&uumlnderhauf<br>Peer Neubert<br>Ben Upcroft<br>Michael Milford</td>
+      <td>19-Jun<br>Afternoon</td>
+    </tr>
+    <tr>
+      <td>SUN-13</td>
+      <td><a href="http://www.quori.org/community-input-meetings/#rss-16-1" target="_blank">
+          A Community-Driven Modular Research Platform for Sociable Human-Robot Interaction</a></td>
+      <td>Mark Yim<br>Maja Mataric<br>Ross Mead</td>
+      <td>19-Jun<br>Afternoon</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+

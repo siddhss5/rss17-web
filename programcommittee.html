@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>2016 Robotics: Science and Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-66594011-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row hidden-sm hidden-xs">
+        <div class ="col-lg-2 col-lg-offset-2 col-md-3 col-md-offset-1 text-right">
+          <img src="img/header_left.png">
+        </div>
+        <div class ="col-md-8 col-lg-6">
+          <img src="img/header_right.png" width="100%">
+        </div>
+      </div>
+      <div class="row hidden-md hidden-lg hidden-xl">
+        <div class ="col-xs-3">
+          <img src="img/header_left.png" width="100%">
+        </div>
+        <div class ="col-xs-9">
+          <img src="img/header_right.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="215">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 col-md-offset-4">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">RSS 2016</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="callforpapers.html">Call for Papers</a></li>
+                  <li><a href="callforworkshops.html">Call for Workshops</a></li>
+                  <li><a href="authorinfo.html">Authors' Information</a></li>
+                  <!-- <li><a href="#">Presentation Instructions</a></li> -->
+                  <li><a href="http://www.roboticsproceedings.org/" target="_blank">Past Proceedings</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="programoverview.html">Program Overview</a></li>
+                  <li><a href="invitedtalks.html">Invited Talks</a></li>
+                  <!-- <li><a href="careerspotlight.html">Early Career Spotlight</a></li> -->
+                  <!-- <li><a href="technicalprogram.html">Technical Program</a></li> -->
+                  <li><a href="workshops.html">Workshops</a></li>
+                  <li><a href="awards.html">Awards</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Committees<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="orgcom.html">Organizing Committee</a></li>
+                  <li><a href="programcommittee.html">Program Committee</a></li>
+                  <li><a href="foundationboard.html">RSS Foundation Board</a></li>
+                  <li><a href="advisoryboard.html">RSS Advisory Board</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attending<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="venue.html">Venue</a></li>
+                  <li><a href="accommodations.html">Accommodations</a></li>
+                  <li><a href="registration.html">Registration</a></li>
+                  <li><a href="localinfo.html">Local Information</a></li>
+                </ul>
+              </li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 hidden-xs hidden-sm text-right"id="sidebar"/>
+        <!-- No sidebar on small screens -->
+        <b><a href="index.html">Home</a></b><br>
+        <a href="callforpapers.html">Call for Papers</a><br>
+        <a href="callforworkshops.html">Call for Workshops</a><br>
+        <a href="authorinfo.html">Authors' Information</a><br>
+        <!-- <a href="#">Presentation Instructions</a><br> -->
+        <a href="http://www.roboticsproceedings.org/" target="_blank">Past Proceedings</a><br>
+        <br>
+        <b>Events</b><br>
+        <a href="programoverview.html">Program Overview</a><br>
+        <a href="invitedtalks.html">Invited Talks</a><br>
+        <!-- <a href="careerspotlight.html">Early Career Spotlight</a><br> -->
+        <!-- <a href="technicalprogram.html">Technical Program</a><br> -->
+        <a href="workshops.html">Workshops</a><br>
+        <a href="awards.html">Awards</a><br>
+        <br>
+        <b>Commitees</b><br>
+        <a href="orgcom.html">Organizing Committee</a><br>
+        <a href="programcommittee.html">Program Committee</a><br>
+        <a href="foundationboard.html">RSS Foundation Board</a><br>
+        <a href="advisoryboard.html">RSS Advisory Board</a><br>
+        <br>
+        <b>Attending</b><br>
+        <a href="venue.html">Venue</a><br>
+        <a href="accommodations.html">Accommodations</a><br>
+        <a href="registration.html">Registration</a><br>
+        <a href="localinfo.html">Local Information</a><br>
+        <br>
+        <b>Sponsor</b><br>
+        <a href="sponsors.html">Sponsorship</a><br>
+        <br>
+        <b>Additional Info</b><br>
+        <a href="docs/rss2016poster.pdf" target="_blank">Poster</a><br>
+        <a href="docs/rss2016flyer.pdf" target="_blank">Flyer</a><br>
+      </div>
+      
+      <div class="col-md-8 col-lg-6 col-sm-12 col-xs-12 text-justify content">
+
+<h3>Program Committee</h3>
+<br>
+<div class="container">
+    <div class="row text-center">
+      <div class="col-md-2">
+        <div class=pc-name> Ali Agha-Mohammadi </div> <div class=pc-org> Qualcomm </div><br>
+        <div class=pc-name> Antonio Agudo </div> <div class=pc-org> Universidad de Zaragoza </div><br>
+        <div class=pc-name> Ho Seok Ahn </div> <div class=pc-org> The University of Auckland, Auckland </div><br>
+        <div class=pc-name> Arash Ajoudani </div> <div class=pc-org> Italian Institute of Technology, Italy </div><br>
+        <div class=pc-name> Baris Akgun </div> <div class=pc-org> Georgia Tech </div><br>
+        <div class=pc-name> Riad Akrour </div> <div class=pc-org> Technical University Darmstadt </div><br>
+        <div class=pc-name> Eren Aksoy </div> <div class=pc-org> Karlsruher Institut f&uumlr Technologie (KIT), Germany </div><br>
+        <div class=pc-name> Jordi Albo-Canals </div> <div class=pc-org> Tufts University </div><br>
+        <div class=pc-name> Javier Alonso Mora </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Ron Alterovitz </div> <div class=pc-org> University of North Carolina at Chapel Hill </div><br>
+        <div class=pc-name> Chris Amato </div> <div class=pc-org> University of New Hampshire </div><br>
+        <div class=pc-name> Francesco Amigoni </div> <div class=pc-org> Politecnico of Milan, Italy </div><br>
+        <div class=pc-name> Anelia Angelova </div> <div class=pc-org> California Institute of Technology </div><br>
+        <div class=pc-name> Alex Ansari </div> <div class=pc-org> Northwestern University </div><br>
+        <div class=pc-name> Brenna Argall </div> <div class=pc-org> Northwestern University </div><br>
+        <div class=pc-name> Miguel Arias Estrada </div> <div class=pc-org> NAOE, Mexico </div><br>
+        <div class=pc-name> Paulo Arratia </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Tamim Asfour </div> <div class=pc-org> KIT (Karlsruhe Institute of Technology) </div><br>
+        <div class=pc-name> Kalle &Aringstr&oumlm </div> <div class=pc-org> Lund Institute of Technology/Lund University </div><br>
+        <div class=pc-name> Nikolay Atanasov </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Daniel Aukes </div> <div class=pc-org> Arizona State University </div><br>
+        <div class=pc-name> Nora Ayanian </div> <div class=pc-org> University of Southern California </div><br>
+        <div class=pc-name> Ko Ayusawa </div> <div class=pc-org> AIST </div><br>
+        <div class=pc-name> Hossein Azizpour </div> <div class=pc-org> KTH Stockholm, Sweden (Kungliga Tekniska h&oumlgskolan) </div><br>
+        <div class=pc-name> Drew Bagnell </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Haoyu Bai </div> <div class=pc-org> National University of Singapore </div><br>
+        <div class=pc-name> Swee Balachandran </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Devin Balkcom </div> <div class=pc-org> Dartmouth </div><br>
+        <div class=pc-name> Tim Barfoot </div> <div class=pc-org> University of Toronto </div><br>
+        <div class=pc-name> Christoph Bartneck </div> <div class=pc-org> University of Caterbury </div><br>
+        <div class=pc-name> Nicola Basilico </div> <div class=pc-org> University of Milan, Italy </div><br>
+        <div class=pc-name> Aaron Becker </div> <div class=pc-org> Univeristy of Houston </div><br>
+        <div class=pc-name> Jens Behley </div> <div class=pc-org> University of Bonn, Germany </div><br>
+        <div class=pc-name> Yasemin Bekiroglu </div> <div class=pc-org> KTH Stockholm, Sweden (Kungliga Tekniska h&oumlgskolan) </div><br>
+        <div class=pc-name> Heni Ben Amor </div> <div class=pc-org> Arizona State University, Georgia Institute of Technology </div><br>
+        <div class=pc-name> Mehdi Benallegue </div> <div class=pc-org> LAAS, LPPA, Universit&eacute Montpellier 2 </div><br>
+        <div class=pc-name> Dmitry Berenson </div> <div class=pc-org> Worcester Polytechnic Institute </div><br>
+        <div class=pc-name> Soulaimane Berkane </div> <div class=pc-org> University of Western Ontario </div><br>
+        <div class=pc-name> Alexandre Bernardino </div> <div class=pc-org> University of Lisbon </div><br>
+        <div class=pc-name> Sourabh Bhattacharya </div> <div class=pc-org> Iowa State University, UIUC </div><br>
+        <div class=pc-name> Subhrajit Bhattacharya </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Bastian Bischoff </div> <div class=pc-org> Robert Bosch GmbH </div><br>
+        <div class=pc-name> Joydeep Biswas </div> <div class=pc-org> U Mass </div><br>
+        <div class=pc-name> M&aringrten Bj&oumlrkman </div> <div class=pc-org> KTH Stockholm, Sweden (Kungliga Tekniska h&oumlgskolan) </div><br>
+        <div class=pc-name> Jan Olaf Blech </div> <div class=pc-org> RMIT </div><br>
+        <div class=pc-name> Jeannette Bohg </div> <div class=pc-org> Max Planck Institute for Intelligent Systems </div><br>
+        <div class=pc-name> Vincent Bonnet </div> <div class=pc-org> Advanced Mechatronics Lab </div><br>
+        <div class=pc-name> Byron Boots </div> <div class=pc-org> Georgia Tech </div><br>
+        <div class=pc-name> Abdeslam Boularias </div> <div class=pc-org> Rutgers University </div><br>
+        <div class=pc-name> Karim Bouyarmane </div> <div class=pc-org> CNRS - University of Montpellier LIRMM </div><br>
+        <div class=pc-name> Chris Bowen </div> <div class=pc-org> University of North Carolina at Chapel Hill </div><br>
+        <div class=pc-name> Sean Bowman </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> David Braun </div> <div class=pc-org> Singapore University of Technology and Design </div><br>
+        <div class=pc-name> Dieter B&uumlchler </div> <div class=pc-org> Max Planck </div><br>
+        <div class=pc-name> Jonas Buchli </div> <div class=pc-org> ETH Zurich </div><br>
+        <div class=pc-name> Wolfram Burgard </div> <div class=pc-org> University of Freiburg </div><br>
+        <div class=pc-name> Michael Burri </div> <div class=pc-org> ETH Zurich </div><br>
+        <div class=pc-name> Stephen Butler </div> <div class=pc-org> Rice University </div><br>
+        <div class=pc-name> Arunkumar Byravan </div> <div class=pc-org> University of Washington </div><br>
+        <div class=pc-name> Cesar Cadena </div> <div class=pc-org> ETH Z&uumlrich </div><br>
+        <div class=pc-name> Maya Cakmak </div> <div class=pc-org> University of Washington, Willow Garage, Inc. </div><br>
+        <div class=pc-name> Roberto Calandra </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Sylvain Calinon </div> <div class=pc-org> Idiap Research Institute, EPFL, Italian Institute of Technology (IIT) </div><br>
+        <div class=pc-name> Marcello Calisti </div> <div class=pc-org> Scuola Superiore Sant'Anna, Pisa, Italy </div><br>
+        <div class=pc-name> Berk Calli </div> <div class=pc-org> Yale </div><br>
+        <div class=pc-name> Luca Carlone </div> <div class=pc-org> Georgia Institute of Technology, MIT  </div><br>
+        <div class=pc-name> Stefano Carpin </div> <div class=pc-org> University of California, Merced </div><br>
+        <div class=pc-name> Ashwin Carvalho </div> <div class=pc-org> Berkeley </div><br>
+        <div class=pc-name> M. Cenk Cavusoglu </div> <div class=pc-org> Case Western University </div><br>
+        <div class=pc-name> Andrea Censi </div> <div class=pc-org> MIT, Caltech </div><br>
+        <div class=pc-name> Suman Chakravorty </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Tiffany Chen </div> <div class=pc-org> Toyota, Georgia Institute of Technology </div><br>
+        <div class=pc-name> Greg Chirikjian </div> <div class=pc-org> John Hopkins University </div><br>
+        <div class=pc-name> Hamid Chitsaz </div> <div class=pc-org> Colorado State University </div><br>
+        <div class=pc-name> Margarita Chli </div> <div class=pc-org> ETH Zurich, University of Edinburgh </div><br>
+        <div class=pc-name> Han-Lim Choi </div> <div class=pc-org> KAIST </div><br>
+        <div class=pc-name> Youngjin Choi </div> <div class=pc-org> Hanyang University </div><br>
+        <div class=pc-name> Howie Choset </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Siddharth Choudhary </div> <div class=pc-org> Georgia Institute of Technology </div><br>
+        <div class=pc-name> Girish Chowdhary </div> <div class=pc-org> Oklahoma State University, MIT </div><br>
+        <div class=pc-name> Jonathan Clark </div> <div class=pc-org> Florida State University </div><br>
+        <div class=pc-name> Nikolaus Correll </div> <div class=pc-org> University of Colorado, Boulder </div><br>
+        <div class=pc-name> Rui Cortesao </div> <div class=pc-org> University of Coimbra </div><br>
+        <div class=pc-name> Francesco Corucci </div> <div class=pc-org> Scuola Superiore Sant'Anna, Pisa, Italy </div><br>
+        <div class=pc-name> David Crandall </div> <div class=pc-org> Indiana University </div><br>
+        <div class=pc-name> Raffaello D'Andrea </div> <div class=pc-org> ETH Zurich </div><br>
+        <div class=pc-name> Houman Dallali </div> <div class=pc-org> Michigan Tech </div><br>
+        <div class=pc-name> Steven Damer </div> <div class=pc-org> University of Minnesota </div><br>
+        <div class=pc-name> Philip Dames </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Hao Dang </div> <div class=pc-org> Columbia University </div><br>
+        <div class=pc-name> Christian Daniel </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Kostas Daniilidis </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Neil Dantam </div> <div class=pc-org> Rice University </div><br>
+        <div class=pc-name> Andrew Davison </div> <div class=pc-org> Imperial College London </div><br>
+        <div class=pc-name> Marcio de Queiroz </div> <div class=pc-org> Louisiana State University </div><br>
+        <div class=pc-name> Guilaume Dechambrier </div> <div class=pc-org> EPFL </div><br>
+        <div class=pc-name> Marc Deisenroth </div> <div class=pc-org> Imperial College London </div><br>
+        <div class=pc-name> Robin Deits </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Babette Dellen </div> <div class=pc-org> Hochschule Koblenz </div><br>
+        <div class=pc-name> Jory Denny </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Yancy Diaz-Mercado </div> <div class=pc-org> Georgia Tech University </div><br>
+        <div class=pc-name> Alexander Dietrich </div> <div class=pc-org> DLR </div><br>
+        <div class=pc-name> Eric Diller </div> <div class=pc-org> University of Toronto </div><br>
+        <div class=pc-name> Jerry Ding </div> <div class=pc-org> Berkeley </div><br>
+        <div class=pc-name> Mehmet R Dogar </div> <div class=pc-org> MIT, Carnegie Mellon University </div><br>
+        <div class=pc-name> Andreas D&oumlrr </div> <div class=pc-org> Robert Bosch GmbH </div><br>
+        <div class=pc-name> Anca Dragan </div> <div class=pc-org> UC Berkeley, Carnegie Mellon University </div><br>
+        <div class=pc-name> Katie Driggs-Campbell </div> <div class=pc-org> Berkeley </div><br>
+        <div class=pc-name> Evan Drumwright </div> <div class=pc-org> George Washington University </div><br>
+        <div class=pc-name> Tom Duckett </div> <div class=pc-org> University of Lincoln </div><br>
+        <div class=pc-name> Matthew Dunbabin </div> <div class=pc-org> Queensland University of Technology </div><br>
+        <div class=pc-name> Felix Duvallet </div> <div class=pc-org> Carnegie Mellon University, EPFL </div><br>
+        <div class=pc-name> Nick Eckenstein </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Deepak Edakkattil Gopinath </div> <div class=pc-org> Georgia Tech </div><br>
+        <div class=pc-name> Magnus Egerstedt </div> <div class=pc-org> Georgia Tech </div><br>
+        <div class=pc-name> Chinwe Ekenna </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Brendan Englot </div> <div class=pc-org> Stevens Institute of Technology </div><br>
+        <div class=pc-name> Johannes Englsberger </div> <div class=pc-org> DLR </div><br>
+        <div class=pc-name> Ozgur Erkent </div> <div class=pc-org> University of Innsbruck </div><br>
+        <div class=pc-name> Adrien Escande </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Marco Ewerton </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Jan Faigl </div> <div class=pc-org> Czech Technical University in Prague </div><br>
+        <div class=pc-name> Maurice Fallon </div> <div class=pc-org> University of Edinburgh </div><br>
+        <div class=pc-name> Egidio Falotico </div> <div class=pc-org> Scuola Superiore Sant'Anna, Pisa, Italy </div><br>
+        <div class=pc-name> Pooyan Fazli </div> <div class=pc-org> Cleveland State University </div><br>
+        <div class=pc-name> Wyatt Felt </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Lu Feng </div> <div class=pc-org> Univ. Pennsylvania </div><br>
+        <div class=pc-name> Francois Ferland </div> <div class=pc-org> ENSTA (&Eacutecole Nationale Sup&eacuterieure de Techniques Avanc&eacutees)-Paris Tech </div><br>
+        <div class=pc-name> Fabrizio Ferrandi </div> <div class=pc-org> Politechnico di Milano </div><br>
+        <div class=pc-name> Nadia Figueroa </div> <div class=pc-org> EPFL (the Swiss Federal Institute of Technology at Lausanne) </div><br>
+        <div class=pc-name> Ross Finman </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Chelsea Finn </div> <div class=pc-org> Berkeley </div><br>
+        <div class=pc-name> Paolo Fiorini </div> <div class=pc-org> University of Verona </div><br>
+        <div class=pc-name> John Folkesson </div> <div class=pc-org> KTH Stockholm, Sweden (Kungliga Tekniska h&oumlgskolan) </div><br>
+        <div class=pc-name> Arturo Forner-Cordero </div> <div class=pc-org> University of S&atildeo Paulo, Brazil </div><br>
+        <div class=pc-name> Christian Forster </div> <div class=pc-org> University of Z&uumlrich </div><br>
+        <div class=pc-name> Simone Frintrop </div> <div class=pc-org> University of Bonn, Germany </div><br>
+        <div class=pc-name> Jie Fu </div> <div class=pc-org> Worchester Polytechnic Institute </div><br>
+        <div class=pc-name> Bruno Gabrich </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> J&uumlrgen Gall </div> <div class=pc-org> University of Bonn, Germany </div><br>
+        <div class=pc-name> Andrej Gams </div> <div class=pc-org> Jozef Stefan Institute </div><br>
+        <div class=pc-name> Gowtham Garimella </div> <div class=pc-org> Johns Hopkins University </div><br>
+        <div class=pc-name> Tim Genewein </div> <div class=pc-org> Max Planck </div><br>
+        <div class=pc-name> Mukulika Ghosh </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Igor Gilitschenski </div> <div class=pc-org> ETH Zurich </div><br>
+        <div class=pc-name> Giuseppina Gini </div> <div class=pc-org> Politechnico Milano </div><br>
+        <div class=pc-name> Julio Godoy </div> <div class=pc-org> University of Minnesota </div><br>
+        <div class=pc-name> Matthew Gombolay </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Sebastian Gomez </div> <div class=pc-org> Max Planck </div><br>
+        <div class=pc-name> Nakul Gopalan </div> <div class=pc-org> Brown University </div><br>
+        <div class=pc-name> Alex Gorodetsky </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Dan Grollman </div> <div class=pc-org> University of Maryland, Baltimore County, University of Washington </div><br>
+        <div class=pc-name> Jacopo Guanetti </div> <div class=pc-org> Berkeley </div><br>
+        <div class=pc-name> Abhinav Gupta </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Joakim Gustafson </div> <div class=pc-org> KTH Stockholm, Sweden (Kungliga Tekniska h&oumlgskolan) </div><br>
+        <div class=pc-name> Stephen Guy </div> <div class=pc-org> University of Minnesota, University of North Carolina at Chapel Hill </div><br>
+        <div class=pc-name> Dylan Hadfield-Menell </div> <div class=pc-org> Berkeley </div><br>
+        <div class=pc-name> Dan Halperin </div> <div class=pc-org> Tel Aviv University </div><br>
+        <div class=pc-name> Ankur Handa </div> <div class=pc-org> University of Cambridge </div><br>
+        <div class=pc-name> Marc Hanheide </div> <div class=pc-org> University of Lincoln </div><br>
+        <div class=pc-name> Justin Hart </div> <div class=pc-org> UBC(University of British Columbia) </div><br>
+        <div class=pc-name> Kenji Hashimoto </div> <div class=pc-org> Waseda University, Tokyo, Japan </div><br>
+        <div class=pc-name> Ross Hatton </div> <div class=pc-org> Oregon State University, Carnegie Mellon University </div><br>
+        <div class=pc-name> Kris Hauser </div> <div class=pc-org> Duke University </div><br>
+        <div class=pc-name> Bradley Hayes </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> David Held </div> <div class=pc-org> Stanford University </div><br>
+        <div class=pc-name> Lindsey Hines </div> <div class=pc-org> Max Planck Institute for Intelligent Systems </div><br>
+        <div class=pc-name> Sandra Hirche </div> <div class=pc-org> Technische Universit&aumlt M&uumlnchen (TUM) </div><br>
+        <div class=pc-name> Guy Hoffman </div> <div class=pc-org> Cornell University </div><br>
+        <div class=pc-name> Geoffrey Hollinger </div> <div class=pc-org> Oregon State University </div><br>
+        <div class=pc-name> Baisravan Homchaudhuri </div> <div class=pc-org> University of New Mexico </div><br>
+        <div class=pc-name> Matthew Howard </div> <div class=pc-org> Kings College London </div><br>
+        <div class=pc-name> Thomas Howard </div> <div class=pc-org> Jet populson Lab NASA </div><br>
+        <div class=pc-name> David Hsu </div> <div class=pc-org> Singapore University of Technology and Design </div><br>
+        <div class=pc-name> Guoquan Huang </div> <div class=pc-org> University of Delaware </div><br>
+        <div class=pc-name> Shoudong Huang </div> <div class=pc-org> University of Technology Sydney </div><br>
+        <div class=pc-name> Vadim Indelman </div> <div class=pc-org> Technion – Israel Institute of Technology </div><br>
+        <div class=pc-name> Serena Ivaldi </div> <div class=pc-org> Kookmin </div><br>
+        <div class=pc-name> Sam Jacobs </div> <div class=pc-org> ABB </div><br>
+        <div class=pc-name> Amir Jafari </div> <div class=pc-org> University of Texas San Antonio, USA </div><br>
+        <div class=pc-name> Lorenzo Jamone </div> <div class=pc-org> Instituto Superior T&eacutecnico,  </div><br>
+        <div class=pc-name> Lucas Janson </div> <div class=pc-org> Stanford University </div><br>
+        <div class=pc-name> Elizabeth Jensen </div> <div class=pc-org> University of New Mexico </div><br>
+        <div class=pc-name> Edward Johns </div> <div class=pc-org> Imperial College </div><br>
+        <div class=pc-name> Aaron Johnson </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Matthew Johnson-Roberson </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Vlad Joukov </div> <div class=pc-org> University of Waterloo </div><br>
+        <div class=pc-name> Leslie Kaelbling </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Michael Kaess </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Sinan Kalkan </div> <div class=pc-org> Middle East Technical University </div><br>
+        <div class=pc-name> Marcelo Kallmann </div> <div class=pc-org> University of California at Merced </div><br>
+        <div class=pc-name> Oren Kanner </div> <div class=pc-org> Yale </div><br>
+        <div class=pc-name> Eva Kanso </div> <div class=pc-org> USC </div><br>
+        <div class=pc-name> Mubbasir Kapadia </div> <div class=pc-org> Rutgers University, University of Pennsylvania, Disney Research </div><br>
+        <div class=pc-name> Ioannis Karamouzas </div> <div class=pc-org> University of Minnesota </div><br>
+        <div class=pc-name> Bilal Kartal </div> <div class=pc-org> University of New Mexico </div><br>
+        <div class=pc-name> Navab Kashiri </div> <div class=pc-org> Italian Institute of Technology </div><br>
+        <div class=pc-name> Lydia Kavraki </div> <div class=pc-org> Rice University </div><br>
+        <div class=pc-name> Carl Kershaw </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Rebecca Khurshid </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Hyounjin Kim </div> <div class=pc-org> Seoul National University </div><br>
+        <div class=pc-name> Jin Seob Kim </div> <div class=pc-org> Johns Hopkins, JHU </div><br>
+        <div class=pc-name> Sangbae Kim </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Seungsu Kim </div> <div class=pc-org> Center of Excellence Cognitive Interaction Technology (CITEC), Bielefeld, Swiss Federal Institute of Technology in Lausanne (EPFL) </div><br>
+        <div class=pc-name> Alexandra Kirsch </div> <div class=pc-org> TU Munich </div><br>
+        <div class=pc-name> Franziska Kl&uumlgl </div> <div class=pc-org> Orebro Universitet </div><br>
+        <div class=pc-name> Ross Knepper </div> <div class=pc-org> Cornell University, MIT </div><br>
+        <div class=pc-name> Jens Kober </div> <div class=pc-org> TU Delft, Max Planck Institute for Intelligent Systems </div><br>
+        <div class=pc-name> Marin Kobilarov </div> <div class=pc-org> John Hopkins University </div><br>
+        <div class=pc-name> Okan Koc </div> <div class=pc-org> Max Planck </div><br>
+        <div class=pc-name> Mangal Kothari </div> <div class=pc-org> University of Leicester </div><br>
+        <div class=pc-name> Rigas Kouskouridas </div> <div class=pc-org> Imperial College London </div><br>
+        <div class=pc-name> Oliver Kroemer </div> <div class=pc-org> USC, Technical University of Darmstadt </div><br>
+        <div class=pc-name> Klas Kronander </div> <div class=pc-org> EPFL </div><br>
+        <div class=pc-name> Michael Kuhlman </div> <div class=pc-org> Naval Research Laboratory </div><br>
+        <div class=pc-name> Tomas Kulvicius </div> <div class=pc-org> University of Southern Denmark </div><br>
+        <div class=pc-name> Alan Kuntz </div> <div class=pc-org> University of North Carolina at Chapel Hill </div><br>
+        <div class=pc-name> Andras Kupcsik </div> <div class=pc-org> National University of Singapore </div><br>
+        <div class=pc-name> Hanna Kurniawati </div> <div class=pc-org> University of Queensland </div><br>
+        <div class=pc-name> Benoit Landry </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Pem Lasota </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Kevin Leahy </div> <div class=pc-org> Boston University </div><br>
+        <div class=pc-name> Alex Lee </div> <div class=pc-org> Northwestern University </div><br>
+        <div class=pc-name> Roland Lenain </div> <div class=pc-org> Irstea </div><br>
+    </div>
+    <div class="col-md-2">
+        <div class=pc-name> Sio-Hoi Leng </div> <div class=pc-org> Sorbonne Universites </div><br>
+        <div class=pc-name> Sebastien Lengagne </div> <div class=pc-org> Karlsruhe Institute of Technology </div><br>
+        <div class=pc-name> Ian Lenz </div> <div class=pc-org> Cornell </div><br>
+        <div class=pc-name> Stefan Leutenegger </div> <div class=pc-org> Imperial College London, ETH Zurich </div><br>
+        <div class=pc-name> Sergey Levine </div> <div class=pc-org> INRIA </div><br>
+        <div class=pc-name> Alberto Quattrini Li </div> <div class=pc-org> University of South Carolina </div><br>
+        <div class=pc-name> Binbin Li </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Jinglin Li </div> <div class=pc-org> General Motors, U. North Carolina </div><br>
+        <div class=pc-name> Miao Li </div> <div class=pc-org> EPFL </div><br>
+        <div class=pc-name> Tsai-Yen Li </div> <div class=pc-org> National Chengchi University </div><br>
+        <div class=pc-name> Yin Li </div> <div class=pc-org> Georgia Tech </div><br>
+        <div class=pc-name> Zhibin Li </div> <div class=pc-org> University of Edinburgh </div><br>
+        <div class=pc-name> Maxim Likhachev </div> <div class=pc-org> Carnegie Mellon University, University of Pennsylvania </div><br>
+        <div class=pc-name> Sejoon Lim </div> <div class=pc-org> Kookmin University </div><br>
+        <div class=pc-name> Zhan Wei Lim </div> <div class=pc-org> National University of Singapore </div><br>
+        <div class=pc-name> Chao Liu </div> <div class=pc-org> Northwestern University </div><br>
+        <div class=pc-name> Guilin Liu </div> <div class=pc-org> George Mason University </div><br>
+        <div class=pc-name> Huaping Liu </div> <div class=pc-org> Tsinghua University, China </div><br>
+        <div class=pc-name> Lantao Liu </div> <div class=pc-org> University of Southern California </div><br>
+        <div class=pc-name> Ming Liu </div> <div class=pc-org> City University of Hong Kong, Hong Kong University of Science and Technology (HKUST). </div><br>
+        <div class=pc-name> Giuseppe Loianno </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Amy Loutfi </div> <div class=pc-org> &Oumlrebro University, Sweden </div><br>
+        <div class=pc-name> Tomas Lozano-Perez </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Yan Lu </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> James MacGlashan </div> <div class=pc-org> Brown University </div><br>
+        <div class=pc-name> Guilherme Maeda </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Nina Mahmoudian </div> <div class=pc-org> Michigan Technological University, Virginia Tech </div><br>
+        <div class=pc-name> Nicolas Mansard </div> <div class=pc-org> LAAS </div><br>
+        <div class=pc-name> Simon Manschitz </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Satyanarayana Manyam </div> <div class=pc-org> AFRL, Air Force Research Lab </div><br>
+        <div class=pc-name> Matthew Marge </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Zoltan-Csaba Marton </div> <div class=pc-org> DLR </div><br>
+        <div class=pc-name> Lorenzo Masia </div> <div class=pc-org> Nanyang Technological University </div><br>
+        <div class=pc-name> Matteo Matteucci </div> <div class=pc-org> Politecnico of Milan, Italy </div><br>
+        <div class=pc-name> Cynthia Matuszek </div> <div class=pc-org> University of Maryland, Baltimore County, University of Washington </div><br>
+        <div class=pc-name> Walterio Mayol </div> <div class=pc-org> University of Bristol </div><br>
+        <div class=pc-name> Mladen Mazuran </div> <div class=pc-org> Universitat Freiburg </div><br>
+        <div class=pc-name> Harris Mcclamroch </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Marissa McCoy </div> <div class=pc-org> Yale </div><br>
+        <div class=pc-name> Troy Mcmahon </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Jose Ramon Medina Hernandez </div> <div class=pc-org> Technische Universit&aumlt M&uumlnchen (TUM) </div><br>
+        <div class=pc-name> Elena Messina </div> <div class=pc-org> National Institute of Standards and Technology (NIST) </div><br>
+        <div class=pc-name> Nathan Michael </div> <div class=pc-org> Carnegie Mellon University, University of Pennsylvania </div><br>
+        <div class=pc-name> Michael Milford </div> <div class=pc-org> Queensland University of Technology </div><br>
+        <div class=pc-name> Stefano Mintchev </div> <div class=pc-org> EPFL </div><br>
+        <div class=pc-name> Eduardo Montijano </div> <div class=pc-org> Centro Universitario de la Defensa., University of Zaragoza </div><br>
+        <div class=pc-name> Ajung Moon </div> <div class=pc-org> University of British Columbia </div><br>
+        <div class=pc-name> Hyungpil Moon </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Marco Morales </div> <div class=pc-org> Instituto Tecnologico Autonomo de Mexico </div><br>
+        <div class=pc-name> Kristi Morgansen </div> <div class=pc-org> University of Washington </div><br>
+        <div class=pc-name> Jun Morimoto </div> <div class=pc-org> ATR </div><br>
+        <div class=pc-name> Gregory Morse </div> <div class=pc-org> University of Central Florida </div><br>
+        <div class=pc-name> Akshay Morye </div> <div class=pc-org> University of Oxford </div><br>
+        <div class=pc-name> Yasamin Mostofi </div> <div class=pc-org> University of California, Santa Barbara </div><br>
+        <div class=pc-name> Anastasios Mourikis </div> <div class=pc-org> University of California at Riverside </div><br>
+        <div class=pc-name> Caio Mucchiani </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Raul Mur-Artal </div> <div class=pc-org> Universidad de Zaragoza </div><br>
+        <div class=pc-name> Rafael Murrieta </div> <div class=pc-org> Centro de Investigaci&oacuten en Matem&aacuteticas (CIMAT), UIUC </div><br>
+        <div class=pc-name> Bilge Mutlu </div> <div class=pc-org> U Wisconsin Madison </div><br>
+        <div class=pc-name> Jun Nakanishi </div> <div class=pc-org> Technische Universit&aumlt M&uumlnchen </div><br>
+        <div class=pc-name> Duy Nguyen-Tuong </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Chris Nielsen </div> <div class=pc-org> University of Waterloo </div><br>
+        <div class=pc-name> Stefanos Nikolaidis </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Andreas Nuechter </div> <div class=pc-org> Universitat Wuerzberg </div><br>
+        <div class=pc-name> Ernesto Nunes </div> <div class=pc-org> University of New Mexico </div><br>
+        <div class=pc-name> Jason O'Kane </div> <div class=pc-org> University of South Carolina </div><br>
+        <div class=pc-name> John Oberlin </div> <div class=pc-org> Brown University </div><br>
+        <div class=pc-name> Meeko Oishi </div> <div class=pc-org> University of New Mexico </div><br>
+        <div class=pc-name> Lauro Ojeda </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Kenn Oldham </div> <div class=pc-org> Universiry of Michigan </div><br>
+        <div class=pc-name> Andrej Olen&#353ek </div> <div class=pc-org> University Rehabilitation Institute, Ljubljana </div><br>
+        <div class=pc-name> Edwin Olson </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Gabor Orosz </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Takayuki Osa </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Christian Ott </div> <div class=pc-org> Caltech </div><br>
+        <div class=pc-name> Lionel Ott </div> <div class=pc-org> University of Sydney </div><br>
+        <div class=pc-name> Michael Otte </div> <div class=pc-org> University of Colorado at Boulder </div><br>
+        <div class=pc-name> Taskin Padir </div> <div class=pc-org> Northeastern  </div><br>
+        <div class=pc-name> Lucia Pais </div> <div class=pc-org> EPFL </div><br>
+        <div class=pc-name> Joni Pajarinen </div> <div class=pc-org> Aalto University </div><br>
+        <div class=pc-name> Gianluca Palli </div> <div class=pc-org> University of Bologna </div><br>
+        <div class=pc-name> Jia Pan </div> <div class=pc-org> City University of Hong Kong, UC Berkeley </div><br>
+        <div class=pc-name> Dimitra Panagou </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Simone Parisi </div> <div class=pc-org> Technical University Darmstadt </div><br>
+        <div class=pc-name> Chonhyon Park </div> <div class=pc-org> University of North Carolina at Chapel Hill </div><br>
+        <div class=pc-name> Jae Sung Park </div> <div class=pc-org> University of North Carolina at Chapel Hill </div><br>
+        <div class=pc-name> Jaeheung Park </div> <div class=pc-org> Seoul National University </div><br>
+        <div class=pc-name> Andrea Parri </div> <div class=pc-org> The BioRobotics Institute, Scuola Superiore Sant'Anna </div><br>
+        <div class=pc-name> Shashank Pathak </div> <div class=pc-org> Instituto Italiano do Tecnologia </div><br>
+        <div class=pc-name> Liam Paull </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> James Paulos </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Marco Pavone </div> <div class=pc-org> Stanford </div><br>
+        <div class=pc-name> Lina Maria Paz </div> <div class=pc-org> University of Oxford </div><br>
+        <div class=pc-name> Ivan Petrovic </div> <div class=pc-org> University of Zagreb </div><br>
+        <div class=pc-name> Matthew Piccoli </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Sudeep Pillai </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Carlo Pinciroli </div> <div class=pc-org> &Eacutecole Polytechnique de Montr&eacuteal </div><br>
+        <div class=pc-name> Giulia Piovan </div> <div class=pc-org> University of California at Santa Barbara </div><br>
+        <div class=pc-name> Erion Plaku </div> <div class=pc-org> The Catholic University of America </div><br>
+        <div class=pc-name> Florian Pokorny </div> <div class=pc-org> University of Southern California, Berkeley </div><br>
+        <div class=pc-name> Paul Pounds </div> <div class=pc-org> University of Queensland </div><br>
+        <div class=pc-name> Andrzej Pronobis </div> <div class=pc-org> University of Washington </div><br>
+        <div class=pc-name> Andreaa Radulescu </div> <div class=pc-org> University of Edinburgh </div><br>
+        <div class=pc-name> Irene Rae </div> <div class=pc-org> University of Washington-Madison, Microsoft Research </div><br>
+        <div class=pc-name> Subramanian Ramamoorthy </div> <div class=pc-org> University of Edinburgh, UK </div><br>
+        <div class=pc-name> Vasumathi Raman </div> <div class=pc-org> United Technologies Research Center </div><br>
+        <div class=pc-name> Fabio Ramos </div> <div class=pc-org> University of Sydney </div><br>
+        <div class=pc-name> Ananth Ranganathan </div> <div class=pc-org> Google, Honda </div><br>
+        <div class=pc-name> Sivakumar Rathinam </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Andreagiovanni Reina </div> <div class=pc-org> University of Sheffield </div><br>
+        <div class=pc-name> Ioannis Rekleitis </div> <div class=pc-org> University of South Carolina </div><br>
+        <div class=pc-name> C. David Remy </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Hongliang Ren </div> <div class=pc-org> National University of Singapore </div><br>
+        <div class=pc-name> Charles Richter </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Barry Ridge </div> <div class=pc-org> Jozef Stefan Institute </div><br>
+        <div class=pc-name> Laurel D. Riek </div> <div class=pc-org> University of Southern California </div><br>
+        <div class=pc-name> Ludovic Righetti </div> <div class=pc-org> Max-Planck Institute for Intelligent Systems, USC </div><br>
+        <div class=pc-name> Paolo Robuffo Giordano </div> <div class=pc-org> IRISA, Max Planck Institute for Biological Cybernetics </div><br>
+        <div class=pc-name> Samuel Rodriguez </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Javier Romero </div> <div class=pc-org> Max Plank </div><br>
+        <div class=pc-name> David Rosen </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Ugo Rosolia </div> <div class=pc-org> Berkeley </div><br>
+        <div class=pc-name> Stergios Roumeliotis </div> <div class=pc-org> University of Minnesota </div><br>
+        <div class=pc-name> Nicholas Roy </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Mike Rubenstein </div> <div class=pc-org> Harvard, Northwestern University </div><br>
+        <div class=pc-name> Wheeler Ruml </div> <div class=pc-org> University of New Hampshire </div><br>
+        <div class=pc-name> Sadra Sadraddini </div> <div class=pc-org> Boston University </div><br>
+        <div class=pc-name> Tim Salcudean </div> <div class=pc-org> University of British Columbia </div><br>
+        <div class=pc-name> Gionata Salvietti </div> <div class=pc-org> Istituto Italiano Tecnologia </div><br>
+        <div class=pc-name> Oren Salzman </div> <div class=pc-org> Tel Aviv University </div><br>
+        <div class=pc-name> Read Sandstrom </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Jos&eacute Santos-Victor </div> <div class=pc-org> University of Lisbon, Portugal </div><br>
+        <div class=pc-name> Junaed Sattar </div> <div class=pc-org> University of Minnesota </div><br>
+        <div class=pc-name> Davide Scaramuzza </div> <div class=pc-org> University of Zurich </div><br>
+        <div class=pc-name> Connor Schenck </div> <div class=pc-org> University of Washington </div><br>
+        <div class=pc-name> Edward Schmerling </div> <div class=pc-org> Stanford </div><br>
+        <div class=pc-name> Angela Schoellig </div> <div class=pc-org> University of Toronto </div><br>
+        <div class=pc-name> John Schulman </div> <div class=pc-org> UC Berkeley  </div><br>
+        <div class=pc-name> Luis Sentis </div> <div class=pc-org> University of Texas at Austin </div><br>
+        <div class=pc-name> Matthew Sheckells </div> <div class=pc-org> Johns Hopkins University </div><br>
+        <div class=pc-name> Dylan Shell </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Shaojie Shen </div> <div class=pc-org> HKUST </div><br>
+        <div class=pc-name> Zvi Shiller </div> <div class=pc-org> Ariel University </div><br>
+        <div class=pc-name> Jivko Sinapov </div> <div class=pc-org> University of Texas at Austin </div><br>
+        <div class=pc-name> Sebastjan &#352lajpah </div> <div class=pc-org> University of Ljubljana </div><br>
+        <div class=pc-name> Stephen Smith </div> <div class=pc-org> University of Waterloo </div><br>
+        <div class=pc-name> Marion Sobotka </div> <div class=pc-org> Technische Universit&aumlt M&uumlnchen </div><br>
+        <div class=pc-name> Nicolas Sommer </div> <div class=pc-org> EPFL </div><br>
+        <div class=pc-name> Hyun Oh Song </div> <div class=pc-org> Stanford </div><br>
+        <div class=pc-name> Andrew Specian </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Markus Spies </div> <div class=pc-org> Robert Bosch GmbH </div><br>
+        <div class=pc-name> Aaron St. Clair </div> <div class=pc-org> Georgia Tech </div><br>
+        <div class=pc-name> Edward Steager </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Bastian Steder </div> <div class=pc-org> University of Freiburg </div><br>
+        <div class=pc-name> Bener Suay </div> <div class=pc-org> Worcester Polytechnic Institute </div><br>
+        <div class=pc-name> Niko Suenderhauf </div> <div class=pc-org> Technische Universitat Chemnitz </div><br>
+        <div class=pc-name> Wael Suleiman </div> <div class=pc-org> Universit&eacute de Sherbrooke </div><br>
+        <div class=pc-name> Wen Sun </div> <div class=pc-org> Carnegie Mellon University </div><br>
+        <div class=pc-name> Chris Sweeney </div> <div class=pc-org> University of California at Santa Barbara </div><br>
+        <div class=pc-name> Dan Szafir </div> <div class=pc-org> University of Colorado </div><br>
+        <div class=pc-name> Jun Takamatsu </div> <div class=pc-org> Nara Institute of Science and Technology, Japan </div><br>
+        <div class=pc-name> Leila Takayama </div> <div class=pc-org> Google </div><br>
+        <div class=pc-name> James Tangorra </div> <div class=pc-org> Drexel   </div><br>
+        <div class=pc-name> Juan D. Tardos </div> <div class=pc-org> Universidad de Zaragoza </div><br>
+        <div class=pc-name> Yuval Tassa </div> <div class=pc-org> University of Washington </div><br>
+        <div class=pc-name> Pratap Tokekar </div> <div class=pc-org> Virginia Tech, University of Pennsylvania </div><br>
+        <div class=pc-name> Tarik Tosun </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Marc Toussaint </div> <div class=pc-org> University of Stuttgart </div><br>
+        <div class=pc-name> Peter Trautman </div> <div class=pc-org> Galois </div><br>
+        <div class=pc-name> Rudolph Triebel </div> <div class=pc-org> Technische Universit&aumlt M&uumlnchen, University of Oxford </div><br>
+        <div class=pc-name> Roberto Tron </div> <div class=pc-org> University of Pennsylvania </div><br>
+        <div class=pc-name> Nikos Tsagarakis </div> <div class=pc-org> Italian Institute of Technology </div><br>
+        <div class=pc-name> Jana Tumova </div> <div class=pc-org> KTH Royal Institute of Technology </div><br>
+        <div class=pc-name> Terry Taewoong Um </div> <div class=pc-org> University of Waterloo </div><br>
+        <div class=pc-name> Paul Umbanhower </div> <div class=pc-org> Northwestern University </div><br>
+        <div class=pc-name> Vaibhav Vasant Unhelkar </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Ben Upcroft </div> <div class=pc-org> Queensland University of Technology </div><br>
+        <div class=pc-name> Diane Uwacu </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Kyriakos Vamvoudakis </div> <div class=pc-org> University of California at Santa Barbara </div><br>
+        <div class=pc-name> Herke van Hoof </div> <div class=pc-org> Technische Universitat Darmstadt </div><br>
+        <div class=pc-name> Bram Vanderborght </div> <div class=pc-org> Vrije Universiteit Brussel, Belgium </div><br>
+        <div class=pc-name> Lorenzo Vannucci </div> <div class=pc-org> Scuola Superiore Sant'Anna </div><br>
+        <div class=pc-name> Jacob Varley </div> <div class=pc-org> Columbia University </div><br>
+        <div class=pc-name> Cristian-Ioan Vasile </div> <div class=pc-org> Boston University </div><br>
+        <div class=pc-name> Ram Vasudevan </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Will Vega-Brown </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Markus Vincze </div> <div class=pc-org> TU Vienna, Austria </div><br>
+        <div class=pc-name> Julia Vinogradska </div> <div class=pc-org> TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Christopher Vo </div> <div class=pc-org> George Mason University </div><br>
+        <div class=pc-name> Jenny Walter </div> <div class=pc-org> Vassar University </div><br>
+        <div class=pc-name> Matthew Walter </div> <div class=pc-org> Toyota Technological Institute at Chicago </div><br>
+        <div class=pc-name> Zheng Wang </div> <div class=pc-org> The University of Hong Kong </div><br>
+        <div class=pc-name> Zhikun Wang </div> <div class=pc-org> Google, TU Darmstadt, Max Planck </div><br>
+        <div class=pc-name> Yorai Wardi </div> <div class=pc-org> Georgia Tech University </div><br>
+        <div class=pc-name> Steven Waslander </div> <div class=pc-org> University of Waterloo </div><br>
+        <div class=pc-name> Astrid Weiss </div> <div class=pc-org> Vienna University of Technology </div><br>
+        <div class=pc-name> Tim Wheeler </div> <div class=pc-org> Stanford University </div><br>
+        <div class=pc-name> Tom Whelan </div> <div class=pc-org> Imperial College London </div><br>
+        <div class=pc-name> David Wilkie </div> <div class=pc-org> University of North Carolina at Chapel Hill </div><br>
+        <div class=pc-name> Ryan Williams </div> <div class=pc-org> University of Southern California </div><br>
+        <div class=pc-name> Stefan Williams </div> <div class=pc-org> The University of Sydney </div><br>
+        <div class=pc-name> David Wolinski </div> <div class=pc-org> INRIA </div><br>
+        <div class=pc-name> Lawson L.S. Wong </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Tichakorn Wongpiromsarn </div> <div class=pc-org> Singapore-MIT Alliance for Research and Technology </div><br>
+        <div class=pc-name> Chih-Peng Wu </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Emily Wu </div> <div class=pc-org> Brown University </div><br>
+        <div class=pc-name> Kanzhi Wu </div> <div class=pc-org> University of Technology Sydney </div><br>
+        <div class=pc-name> Liao Wu </div> <div class=pc-org> National University of Singapore </div><br>
+        <div class=pc-name> Manuel Wuthrich </div> <div class=pc-org> Max Plank </div><br>
+        <div class=pc-name> Yiliang Xu </div> <div class=pc-org> Apple, Kitware </div><br>
+        <div class=pc-name> Yuji Yamakawa </div> <div class=pc-org> University of Tokyo, Japan </div><br>
+        <div class=pc-name> Ko Yamamoto </div> <div class=pc-org> University of Tokyo, Japan </div><br>
+        <div class=pc-name> Yezhou Yang </div> <div class=pc-org> University of Maryland </div><br>
+        <div class=pc-name> Hsin-Yi Yeh </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Shu-Hao Yeh </div> <div class=pc-org> Texas A&M University </div><br>
+        <div class=pc-name> Dmitry Yershov </div> <div class=pc-org> MIT </div><br>
+        <div class=pc-name> Hak Yi </div> <div class=pc-org> University of California at Los Angeles </div><br>
+        <div class=pc-name> Jingang Yi </div> <div class=pc-org> Rutgers </div><br>
+        <div class=pc-name> Sung-Eui Yoon </div> <div class=pc-org> KAIST </div><br>
+        <div class=pc-name> Fisher Yu </div> <div class=pc-org> Princeton University </div><br>
+        <div class=pc-name> Jingjin Yu </div> <div class=pc-org> Rutgers University </div><br>
+        <div class=pc-name> Hao Zhang </div> <div class=pc-org> Colorado School of Mines </div><br>
+        <div class=pc-name> Weixuan Zhang </div> <div class=pc-org> ETH Zurich </div><br>
+        <div class=pc-name> Zijian Zhao </div> <div class=pc-org> Shandong University </div><br>
+        <div class=pc-name> Yu Zheng </div> <div class=pc-org> University of Michigan </div><br>
+        <div class=pc-name> Zeeshan Zia </div> <div class=pc-org> NEC Labs </div><br>
+        <div class=pc-name> Brian Ziebart </div> <div class=pc-org> University of Illinois </div><br>
+    </div>
+</div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+
